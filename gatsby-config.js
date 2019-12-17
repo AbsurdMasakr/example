@@ -8,8 +8,12 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@johndoe",
+    twitterUsername: "@john_smilga",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://reverent-curran-8e1f5d.netlify.com",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,5 +34,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
   ],
 }
